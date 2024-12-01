@@ -1,0 +1,243 @@
+body {
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f9fc !important;
+    h1, h2 {
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.8rem;
+        margin-top: 80px;
+        color: var(--secondary-color);
+        font-weight: 700;
+    }
+}
+
+span {
+    color: green;
+    font-weight: bold;
+}
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.products-table th,
+.products-table td {
+    padding: 15px;
+    text-align: center; 
+    vertical-align: middle; 
+}
+
+.products-table thead {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.products-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.products-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.products-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.products-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos de las Celdas */
+.image-cell img.table-image {
+    width: 60px;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.description-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description-cell .description {
+    max-width: 400px;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.price-cell {
+    color: #333;
+    font-weight: bold;
+}
+
+.actions-cell .icon-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Centrar iconos de acciones */
+}
+
+.actions-cell .btn {
+    padding: 8px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.actions-cell .btn-edit:hover {
+    color: white;
+    background-color: #0c4b86;
+}
+
+.actions-cell .btn-danger {
+    color: #d9534f;
+}
+
+.actions-cell .btn-danger:hover {
+    color: white;
+    background-color: #d9534f;
+}
+
+.products-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.main-table {
+    overflow-x: auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+@media screen and (width >= 820px) and (width <= 1000px) {
+    .main-footer {
+        flex-direction: column;
+
+        .footer-1 {
+            .footer-social {
+                border-bottom: 2px solid #cc22b6;
+                
+                h3 {
+                    margin: 3rem 0;
+                }
+            }
+    
+            .footer-brand {
+                
+                padding-bottom: 2rem;
+                border-bottom: 2px solid #cc22b6;
+    
+                h3 {
+                    margin: 3rem 0;
+                }
+                
+                .image {
+                    height: 100px;
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+    
+            .footer-info {
+                display: flex;
+                flex-direction: column;
+    
+                h3 {
+                    margin: 3rem 0;
+                }
+    
+                .container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width >= 1001px) and (width <= 1200px) {
+    .main-footer {
+        flex-direction: column;
+
+        .footer-1 {
+            .footer-social {
+                border-bottom: 2px solid #cc22b6;
+                
+                h3 {
+                    margin: 3rem 0;
+                }
+            }
+    
+            .footer-brand {
+                
+                padding-bottom: 2rem;
+                border-bottom: 2px solid #cc22b6;
+    
+                h3 {
+                    margin: 3rem 0;
+                }
+                
+                .image {
+                    height: 100px;
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+    
+            .footer-info {
+                display: flex;
+                flex-direction: column;
+    
+                h3 {
+                    margin: 3rem 0;
+                }
+    
+                .container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width > 1200px) {
+    
+    .main-table {
+        padding: 70px;
+    }
+
+    body {
+        h1 {
+            margin-top: 120px;
+            font-size: 2.5rem;
+        }
+    }
+}

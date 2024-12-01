@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Principal</title>
+
+    <!-- LINKS A CSS -->
+    <link rel="stylesheet" href="/css/estilos-generales/styles.css">
+    <link rel="stylesheet" href="/css/estilos-generales/footer.css">
+    <link rel="stylesheet" href="/css/estilos-generales/header.css">
+    <link rel="stylesheet" href="/css/estilos-generales/feactures.css">
+    <link rel="stylesheet" href="/css/estilos-generales/main-container.css">
+    <link rel="stylesheet" href="/css/estilos-generales/keyframes.css">
+
+    <!-- LINK A FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- LINK BOOTSTRAP - SOLO PARA UN CAROUSEL COMO SE DIJO QUE SE PODÍA USAR EN EL ENUNCIADO -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- LINK FAVICON -->
+    <link rel="icon" href="/assets/images/logo ico.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <a class="link-whatsapp" href="#"><img src="/assets/images/whatsapp/1.png" alt="Link a whatsapp"></a>
+
+    <header class="main-header">
+
+        <input type="checkbox" id="burger" class="input-burger">
+        <!-- MENU  DE EHAMBURGUESA -->
+        <label class="burger-container" for="burger">
+            <div class="burger"></div>
+        </label>
+        <!-- LOGO DE LA EMPRESA -->
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/assets/images/logo.jpg" alt="Imágen del Logo de la empresa" class="nav-logo">
+            </a>
+        </div>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/about-us.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/admin-products.html">Admin products</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- CARRITO Y AVATAR -->
+        <div class="user-info">
+            <div class="cart-container">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="picture-container">
+                <img src="https://www.utqiagvik.us/wp-content/uploads/2022/08/pngwing.com_.png" alt="User avatar"
+                    class="user-picture">
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCTION BANNER -->
+    <section class="section-banner">
+
+        <!-- Section de imagenes para el slider -->
+        <div class="banner">
+            <img src="/assets/images/banner.png" alt="Imágen del banner" class="imagen">
+        </div>
+
+    </section>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <h2>PRODUCTOS</h2>
+    <main class="main-container">
+
+        <!-- SECTION PRODUCTOS -->
+
+        <article class="card">
+            <div class="card-content">
+
+                <img src="/assets/images/h1c/1.webp" alt="Imágen Cámara H1C" class="card-image">
+
+                <div class="card-status">
+                    New
+                </div>
+                <a href="#" class="card-buy">
+                    Comprar
+                </a>
+
+            </div>
+            <div class="card-info">
+                <!-- Título de la tarjeta -->
+                <h3 class="card-title">H1c 2MP para interior</h3>
+                <div class="card-price">
+                    <span class="dolar-signal">USD</span> 26,11
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <div class="card-content">
+
+                <img src="/assets/images/h3c/1.jpg" alt="Imágen Cámara H1C" class="card-image">
+
+                <div class="card-status card-regular">
+                    Regular
+                </div>
+                <a href="#" class="card-buy">
+                    Comprar
+                </a>
+
+            </div>
+            <div class="card-info">
+                <!-- Título de la tarjeta -->
+                <h3 class="card-title">H3c 2MP para exterior</h3>
+                <div class="card-price">
+                    <span class="dolar-signal">USD</span> 31,30
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <div class="card-content">
+
+                <img src="/assets/images/h5/1.jpeg" alt="Imágen Cámara H5 4G" class="card-image">
+
+                <div class="card-status">
+                    New
+                </div>
+                <a href="#" class="card-buy">
+                    Comprar
+                </a>
+
+            </div>
+            <div class="card-info">
+                <!-- Título de la tarjeta -->
+                <h3 class="card-title">H5-R201 4G</h3>
+                <div class="card-price">
+                    <span class="dolar-signal">USD</span> 77,36
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <div class="card-content">
+
+                <img src="/assets/images/c6n/1.jpg" alt="Imágen Cámara C6n" class="card-image">
+
+                <div class="card-status">
+                    Nuevo
+                </div>
+                <a href="#" class="card-buy">
+                    Comprar
+                </a>
+
+            </div>
+            <div class="card-info">
+                <!-- Título de la tarjeta -->
+                <h3 class="card-title">C6N 1080p</h3>
+                <div class="card-price">
+                    <span class="dolar-signal">USD</span> 32,13
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <div class="card-content">
+
+                <img src="/assets/images/h8c/1.jpg" alt="Imágen Cámara eb3" class="card-image">
+
+                <div class="card-status">
+                    Nuevo
+                </div>
+                <a href="#" class="card-buy">
+                    Comprar
+                </a>
+
+            </div>
+            <div class="card-info">
+                <!-- Título de la tarjeta -->
+                <h3 class="card-title">H8C WIFI</h3>
+                <div class="card-price">
+                    <span class="dolar-signal">USD</span> 56,23
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <div class="card-content">
+
+                <img src="/assets/images/eb8/eb8.png" alt="Imágen Cámara HB8" class="card-image">
+
+                <div class="card-status card-regular">
+                    Regular
+                </div>
+                <a href="#" class="card-buy">
+                    Comprar
+                </a>
+
+            </div>
+            <div class="card-info">
+                <!-- Título de la tarjeta -->
+                <h3 class="card-title">EB8 WIFI</h3>
+                <div class="card-price">
+                    <span class="dolar-signal">USD</span> 192,16
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <div class="card-content">
+
+                <img src="/assets/images/panel solar con carga/1.png" alt="Imágen Panel solar" class="card-image">
+
+                <div class="card-status card-prox">
+                    Prox.
+                </div>
+                <a href="#" class="card-buy">
+                    Comprar
+                </a>
+
+            </div>
+            <div class="card-info">
+                <!-- Título de la tarjeta -->
+                <h3 class="card-title">Panel solar de carga</h3>
+                <div class="card-price">
+                    <span class="dolar-signal">USD</span> 33,54
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <div class="card-content">
+
+                <img src="/assets/images/tarjeta microSD pro/1.jpg" alt="Imágen micro SD PRO" class="card-image">
+
+                <div class="card-status card-regular">
+                    Regular
+                </div>
+                <a href="#" class="card-buy">
+                    Comprar
+                </a>
+
+            </div>
+            <div class="card-info">
+                <!-- Título de la tarjeta -->
+                <h3 class="card-title">MicroSD 64 GB EZVIZ Pro</h3>
+                <div class="card-price">
+                    <span class="dolar-signal">USD</span> 6,19
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- SECCION CARACTERISTICAS -->
+    <h2>CARACTERÍSTICAS</h2>
+    <section class="section-feactures">
+        <div class="feacture feacture-1">
+            <h3>Resolución y Visión Nocturna</h3>
+            <input type="checkbox" id="mostrar-mas-1" class="mostrar-mas">
+            <label for="mostrar-mas-1" class="ver-mas">Touch me</label>
+            
+            <div class="caja-icono">
+                <div class="icono">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+            </div>
+            
+            
+            <div class="description">Las cámaras de seguridad Ezviz destacan por su alta resolución y avanzadas
+                capacidades de visión nocturna, factores que son cruciales para lograr una supervisión efectiva y
+                detallada en hogares y negocios. Sus modelos con resoluciones Full HD y 4K capturan imágenes de alta
+                calidad, permitiendo ver detalles nítidos en diversas condiciones de iluminación, lo que resulta
+                esencial para identificar rostros o placas de vehículos. Además, la tecnología de infrarrojos y visión
+                nocturna avanzada de Ezviz permite una captura de vídeo precisa en condiciones de completa oscuridad,
+                ofreciendo imágenes claras y con alto nivel de detalle. Esto brinda seguridad continua y la confianza de
+                que no se perderá información importante, independientemente del momento del día o la iluminación del
+                entorno.
+            </div>
+        </div>
+        <div class="feacture feacture-2">
+            <h3>Detección de Movimiento y Seguimiento Inteligente</h3>
+            <input type="checkbox" id="mostrar-mas-2" class="mostrar-mas">
+            <label for="mostrar-mas-2" class="ver-mas">Touch me</label>
+
+            <div class="caja-icono">
+                <div class="icono">
+                    <i class="fa-solid fa-person-walking fas"></i>
+                </div>
+            </div>
+
+            <div class="description">
+                Las cámaras de seguridad de Ezviz cuentan con avanzadas capacidades de detección de movimiento y
+                seguimiento automático, características que refuerzan la seguridad activa de cualquier espacio. El
+                sistema de detección inteligente distingue entre movimiento humano y otras fuentes de movimiento, como
+                animales o sombras, minimizando así las falsas alarmas y aumentando la precisión en las alertas. Además,
+                el seguimiento automático de Ezviz permite que la cámara siga de forma continua los movimientos
+                sospechosos dentro de su campo de visión, proporcionando un monitoreo más detallado y proactivo. Esto
+                asegura que cada movimiento relevante sea capturado y registrado, incrementando la efectividad y
+                confianza en la vigilancia.
+            </div>
+        </div>
+        <div class="feacture feacture-3">
+            <h3>Acceso Remoto y Notificaciones en Tiempo Real</h3>
+            <input type="checkbox" id="mostrar-mas-3" class="mostrar-mas">
+            <label for="mostrar-mas-3" class="ver-mas">Touch me</label>
+
+            <div class="caja-icono">
+                <div class="icono">
+                    <i class="fa-solid fa-house-laptop"></i>
+                </div>
+            </div>
+
+            <div class="description">
+                Las cámaras Ezviz ofrecen a los usuarios la capacidad de conectarse y recibir notificaciones en tiempo
+                real mediante la aplicación móvil, una funcionalidad que mejora significativamente la supervisión y el
+                control. A través de esta aplicación, los usuarios pueden acceder a la transmisión en vivo de su cámara
+                desde cualquier lugar, lo que permite monitorear su hogar o negocio en todo momento. Además, el sistema
+                envía alertas instantáneas cuando detecta actividad inusual, brindando una respuesta rápida ante
+                cualquier evento sospechoso. Esta función de acceso remoto no solo aumenta la comodidad, sino que
+                también proporciona tranquilidad a los usuarios, al garantizar la seguridad de su propiedad incluso
+                cuando no están presentes.
+            </div>
+        </div>
+        <div class="feacture feacture-4">
+            <h3>Carcasa Metálica de Alta Resistencia</h3>
+            <input type="checkbox" id="mostrar-mas-4" class="mostrar-mas">
+            <label for="mostrar-mas-4" class="ver-mas">Touch me</label>
+
+            <div class="caja-icono">
+                <div class="icono">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+            </div>
+
+            <div class="description">
+                Las cámaras de Ezviz, especialmente los modelos para exteriores, están construidas con una aleación de
+                aluminio de alta calidad. Este metal es duradero, resistente a la corrosión y, además, actúa como un
+                buen disipador de calor, lo cual ayuda a mantener la cámara en buen estado durante largas jornadas de
+                grabación. A diferencia de muchas cámaras económicas de plástico, las carcasas metálicas de Ezviz
+                protegen mejor el hardware interno en condiciones climáticas adversas, comparándose favorablemente con
+                marcas como Nest y Arlo en términos de durabilidad.
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDER -->
+    <h2>+ INFO GRÁFICA</h2>
+    <section class="carousel">
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img loading="lazy" src="/assets/images/banners/1.png" class="d-block w-100"
+                        alt="Imágen del banner">
+                </div>
+                <div class="carousel-item">
+                    <img loading="lazy" src="/assets/images/banners/2.jpg" class="d-block w-100"
+                        alt="Imágen del banner">
+                </div>
+                <div class="carousel-item">
+                    <img loading="lazy" src="/assets/images/banners/3.png" class="d-block w-100"
+                        alt="Imágen del banner">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-1">
+            <section class="footer-social">
+                <h3>REDES SOCIALES</h3>
+                <ul>
+                    <li><a class="facebook" href="https://www.facebook.com/profile.php?id=61569006397086"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a class="whatsapp" href="https://wa.me/c/5491127721921"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a class="instagram" href="https://www.instagram.com/sssavibofficial/"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </section>
+            
+            <section class="footer-brand">
+                <h3>LOGO</h3>
+                <div class="image">
+                    <img loading="lazy" src="/assets/images/logo.jpg" alt="Logo de la empresa">
+                </div>
+            </section>
+            
+            <section class="footer-info">
+                <h3>MÁS INFORMACIÓN</h3>
+                <div class="container">
+                    <div class="footer-links">
+                        <h4>Compañia</h4>
+                        <ul>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Nuestros servicios</a></li>
+                            <li><a href="#">Políticas de privacidad</a></li>
+                            <li><a href="#">Afiliate</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Tienda</h4>
+                        <ul>
+                            <li><a href="#">Accesorios</a></li>
+                            <li><a href="#">Cámaras</a></li>
+                            <li><a href="#">Casas inteligentes</a></li>
+                            <li><a href="#">Videoporteros</a></li>
+                            <li><a href="#">Control de acceso</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Compras</a></li>
+                            <li><a href="#">Envíos</a></li>
+                            <li><a href="#">Estatus de orden</a></li>
+                            <li><a href="#">Pagos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="footer-2">
+            <div class="last-line">
+                <h5>Todos los derechos reservados &copy; 2024 - Infinity</h5>
+            </div>
+        </div>
+        
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

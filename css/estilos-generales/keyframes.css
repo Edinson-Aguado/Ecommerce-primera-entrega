@@ -1,0 +1,53 @@
+@keyframes colorChange {
+    0% {
+        color: #0e1ce4; 
+    }
+    15% {
+        color: #e7ba09;
+    }
+    25% {
+        color: #ffffba;
+    }
+    35% {
+        color: #89f67f;
+    }
+    50% {
+        color: #0ed751; 
+    }
+    75% {
+        color: #f2f2f2; 
+    }
+    100% {
+        color: #8755db; 
+    }
+}
+
+@keyframes borderRadiusChange {
+    0% {
+        border-radius: 0 0 0 0; 
+    }
+    10% {
+        border-radius: 0 25px 0 0;
+    }
+    35% {
+        border-radius: 0 0 25px 0;
+    }
+    45% {
+        border-radius: 0 0 0 25px;
+    }
+    55% {
+        border-radius: 25px 0 0 0; 
+    }
+    65% {
+        border-radius: 0 25px 0 0; 
+    }
+    75% {
+        border-radius: 0 0 25px 0; 
+    }
+    85% {
+        border-radius: 0 0 0 25px; 
+    }
+    100% {
+        border-radius: 0 0 0 0; 
+    }
+}

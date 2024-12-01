@@ -1,0 +1,191 @@
+.main-container {
+    background-color: #ffffff91;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 3.1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    .card {
+        width: 250px;
+        min-width: 250px;
+        background-color: #a1aabc;
+        border: none;
+        border-radius: 0 0 17px 17px;
+        box-shadow:  2px 2px 15px #00000080;
+        transition: opacity .4s ease, transform .4s ease, color .4s ease;
+
+        &:hover {
+            .card-content {
+                .card-buy {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .card-info {
+                .card-price {
+                    .dolar-signal {
+                        color: #1dcc2e;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .card-content {
+            overflow: hidden;
+            position: relative;
+            display: flex;
+
+            .card-status {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                padding: 3px 6px;
+                border-radius: 5px;
+                color: white;
+                background-color: rgb(20, 173, 20);
+                font-weight: 500;
+            }
+
+            .card-regular {
+                background-color: rgb(15, 21, 129) !important;
+            }
+            .card-prox {
+                background-color: rgb(186, 12, 53) !important;
+            }
+
+            .card-image {
+                width: 100%;
+                object-fit: cover;
+                object-position: bottom;
+            }
+
+            .card-buy {
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: center;
+                position: absolute;
+                bottom: 5px;
+                left: 25px;
+                right: 25px;
+                padding: .5rem 1rem;
+                border: none;
+                background-color: #4cd159;
+                outline: none;
+                color: white;
+                font-weight: 700;
+                outline: none;
+                font-size: 1.2rem;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color .4s ease-in-out, transform .4s ease-in-out, opacity .4s ease-in-out;
+                opacity: 0;
+                transform: translateY(70px);
+
+                &:hover {
+                    background-color: #0b8718;
+                }
+            }
+
+            &:hover {
+                .card-buy {
+                    bottom: 5px;
+                    display: block;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .card-info {
+            padding: 1rem;
+            text-align: center;
+            color: white;
+            height: 100%;
+            border-radius: 0 0 17px 17px;
+            transition: background-color .4s ease-in-out;
+
+            &:hover {
+                background-color: #40464fc2;
+                border-radius: none;
+            }
+            h3 {
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+            }
+
+            .card-price {
+                font-weight: bold;
+                font-size: 1.2rem;
+                padding: .5rem 1rem;
+                border: 2px solid #0f951d;
+                border-radius: 10px;
+
+                .dolar-signal {
+                    color: #0f951d;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width >= 820px) and (width <= 1200px) {
+    .main-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+
+            .card-content {
+                height: 100%;
+                width: 100%;
+                .card-image {
+                    height: 250px;
+                    width: 100%;
+                }
+            }
+
+            .card-info {
+                .card-price {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width > 1200px) {
+    .main-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+            width: 270px;
+            .card-content {
+                height: 100%;
+                width: 100%;
+                .card-image {
+                    height: 250px;
+                    width: 100%;
+                }
+            }
+
+            .card-info {
+                .card-price {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    body {
+        h2 {
+            margin: 4rem 0;
+        }
+    }
+}
