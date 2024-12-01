@@ -63,6 +63,10 @@ body {
         color: var(--secondary-color);
     }
 
+    h1 {
+        margin: 40px 0;
+    }
+
     .carousel {
         width: 100vw;
         .slide {
