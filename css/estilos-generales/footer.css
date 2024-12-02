@@ -110,6 +110,7 @@
                     li {
                         a {
                             display: inline-block;
+                            background-color: transparent !important;
                             text-align: center;
                             text-decoration: none;
                             font-size: 14px;
