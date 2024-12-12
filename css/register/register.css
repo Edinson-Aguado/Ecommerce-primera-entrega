@@ -9,13 +9,7 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
-
-    h1 {
-        text-align: center;
-        text-transform: uppercase;
-    }
-
+    padding: 0 1.5rem;
 
     .register-form {
         font-weight: 700;
@@ -95,3 +89,39 @@ body {
     accent-color: #f51585;
 }
 
+@media screen and (width >= 820px) and (width <= 1000px) {
+    .main-container {
+        .register-form {
+            max-width: 800px;
+        }
+    }
+    body {
+        h1 {
+            margin: 120px 0 20px 0 !important;
+        }
+    }
+}
+@media screen and (width >= 1001px) and (width <= 1200px) {
+    .main-container {
+        .register-form {
+            max-width: 850px;
+        }
+    }
+    body {
+        h1 {
+            margin: 120px 0 20px 0 !important;
+        }
+    }
+}
+@media screen and (width > 1200px) {
+    .main-container {
+        .register-form {
+            max-width: 900px;
+        }
+    }
+    body {
+        h1 {
+            margin: 120px 0 20px 0 !important;
+        }
+    }
+}
