@@ -6,8 +6,8 @@
 }
 
 :root {
-    --primary-color: #dbbe6d;
-    --secondary-color: #efca67;
+    --primary-color: #539fc3;
+    --secondary-color: #198fc7;
     --background-color: #ffffff;
     --text-color: #ffffff;
 }
@@ -38,9 +38,13 @@ body {
             width: 45px;
             height: 45px;
             object-fit: cover;
-            transition: transform .4s ease;
+            transition: transform .4s ease-in-out;
+            animation: move ease-in-out infinite;
+            animation-duration: 4s;
+            animation-delay: 2s;
             &:hover {
-                transform: scale(1.3);
+                animation: none;
+                transform: scale(1.1);
             }
         }
     }
