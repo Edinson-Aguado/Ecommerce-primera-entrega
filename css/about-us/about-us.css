@@ -72,6 +72,7 @@ body {
         p {
             font-size: 0.9rem;
             color: #777;
+            text-align: justify;
         }
     }
     .values ul {
@@ -82,6 +83,7 @@ body {
             color: #444;
             padding: 10px 0;
             border-bottom: 1px solid #eee;
+            text-align: justify;
         }
         li:last-child {
             border-bottom: none;

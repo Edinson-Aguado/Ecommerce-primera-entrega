@@ -9,6 +9,7 @@ body {
     .title {
         h2 {
             color: var(--secondary-color);
+            margin: 40px 0 40px 0;
         }
     }
 } 
@@ -17,8 +18,8 @@ body {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    width: 100vw;
     padding: 0 50px;
+    width: 100vw;
     gap: 10px;
 
     .formulario-contact {
@@ -86,51 +87,16 @@ body {
 }
 
 @media screen and (width >= 820px) and (width <= 1000px) {
-    .main-footer {
-        flex-direction: column;
+    body {
 
-        .footer-1 {
-            .footer-social {
-                border-bottom: 2px solid #cc22b6;
-                
-                h3 {
-                    margin: 3rem 0;
-                }
-            }
-    
-            .footer-brand {
-                
-                padding-bottom: 2rem;
-                border-bottom: 2px solid #cc22b6;
-    
-                h3 {
-                    margin: 3rem 0;
-                }
-                
-                .image {
-                    height: 100px;
-    
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                }
-            }
-    
-            .footer-info {
-                display: flex;
-                flex-direction: column;
-    
-                h3 {
-                    margin: 3rem 0;
-                }
-    
-                .container {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: flex-start;
-                    justify-content: center;
+        .main-container {
+            flex-direction: row;
+            .mapa {
+                height: 400px;
+                width: 100%;
+                iframe {
+                    width: 100%;
+                    height: 100%;
                 }
             }
         }
@@ -138,51 +104,28 @@ body {
 }
 
 @media screen and (width >= 1001px) and (width <= 1200px) {
-    .main-footer {
-        flex-direction: column;
-
-        .footer-1 {
-            .footer-social {
-                border-bottom: 2px solid #cc22b6;
-                
-                h3 {
-                    margin: 3rem 0;
-                }
-            }
     
-            .footer-brand {
-                
-                padding-bottom: 2rem;
-                border-bottom: 2px solid #cc22b6;
-    
-                h3 {
-                    margin: 3rem 0;
-                }
-                
-                .image {
-                    height: 100px;
-    
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                }
-            }
-    
-            .footer-info {
-                display: flex;
-                flex-direction: column;
-    
-                h3 {
-                    margin: 3rem 0;
-                }
-    
-                .container {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: flex-start;
-                    justify-content: center;
+    body {
+        a.link-whatsapp {
+            scale: 1.5;
+            right: 40px;
+            bottom: 40px;
+        }
+        h1 {
+            margin: 120px 0 20px 0 !important;
+        }
+        h2 {
+            margin: 2rem 0 !important;
+        }
+        
+        .main-container {
+            flex-direction: row;
+            .mapa {
+                height: 400px;
+                width: 100%;
+                iframe {
+                    width: 100%;
+                    height: 100%;
                 }
             }
         }
@@ -190,126 +133,6 @@ body {
 }
 
 @media screen and (width > 1200px) {
-    .main-footer {
-        font-size: 2rem;
-        flex-direction: column;
-
-        .footer-1 {
-            display: flex;
-            flex-direction: row;
-            align-items: stretch;
-            justify-content: baseline;
-            
-            .footer-social {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: start;
-                gap: 170px;
-                padding: 0 4rem;
-            }
-            .footer-brand {
-                order: -1;
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                align-items: center;
-                gap: 170px;
-                border-right: 2px solid var(--secondary-color);
-
-                h3 {
-                    padding: 10px 20px;
-                }
-
-                img {
-                    scale: 2;
-                }
-            }
-            .footer-info {
-                flex-grow: 1;
-                order: -1;
-                padding: 0;
-                border-right: 2px solid var(--secondary-color);
-                h3 {
-                    color: var(--secondary-color);
-                    padding: 10px;
-                }
-                .info {
-                    .name, .mision-vision, .horario {
-                        background-color: var(--secondary-color) !important;
-                        h4 {
-                            margin-bottom: 30px;
-                        }
-                    }
-                    .name {
-                        border-radius: 20px 20px 0 0;
-                        border-bottom: 1px solid black;
-                    }
-                    .mision-vision {
-                        border-bottom: 1px solid black;
-                    }
-                }
-            }
-        }
-    }
-
-    .main-container {
-        flex-direction: row;
-        padding: 0 150px;
-        gap: 20px;
-        align-items: stretch;
-        justify-content: stretch;
-        .mapa {
-            width: 100%;
-            height: 400px;
-            iframe {
-                width: 100%;
-                height: 100%;
-                border: none;
-            }
-        }
-    
-        .input-group {
-            padding: 8px;
-    
-            label {
-                display: block;
-                font-size: 12px;
-                margin-bottom: 4px;
-            }
-    
-            input,
-            textarea,
-            select {
-                width: 100%;
-                border: 1px solid royalblue;
-                font-family: 'Roboto', sans-serif;
-                padding: 8px;
-                outline: none;
-                border-radius: 4px;
-            }
-        }
-    
-        .btn {
-            margin-top: 16px;
-            padding: 10px 20px;
-            background-color: var(--primary-color);
-            color: white;
-            font-weight: bold;
-            border-radius: 4px;
-            cursor: pointer;
-            outline: none;
-            border: none;
-            transition: background-color .5s ease-in-out, color .5s ease-in-out, scale .5s ease-in-out;
-            &:hover {
-                background-color: white;
-                color: var(--secondary-color);
-                scale: 1.025;
-            }
-        }
-    
-    }
 
     body {
         a.link-whatsapp {
@@ -321,7 +144,64 @@ body {
             margin: 120px 0 20px 0 !important;
         }
         h2 {
-            margin: 2rem 0;
+            margin: 2rem 0 !important;
+        }
+    
+        .main-container {
+            flex-direction: row;
+            padding: 0 150px;
+            gap: 20px;
+            align-items: stretch;
+            justify-content: stretch;
+            .mapa {
+                width: 100%;
+                height: 400px;
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                }
+            }
+        
+            .input-group {
+                padding: 8px;
+        
+                label {
+                    display: block;
+                    font-size: 12px;
+                    margin-bottom: 4px;
+                }
+        
+                input,
+                textarea,
+                select {
+                    width: 100%;
+                    border: 1px solid royalblue;
+                    font-family: 'Roboto', sans-serif;
+                    padding: 8px;
+                    outline: none;
+                    border-radius: 4px;
+                }
+            }
+        
+            .btn {
+                margin-top: 16px;
+                padding: 10px 20px;
+                background-color: var(--primary-color);
+                color: white;
+                font-weight: bold;
+                border-radius: 4px;
+                cursor: pointer;
+                outline: none;
+                border: none;
+                transition: background-color .5s ease-in-out, color .5s ease-in-out, scale .5s ease-in-out;
+                &:hover {
+                    background-color: white;
+                    color: var(--secondary-color);
+                    scale: 1.025;
+                }
+            }
+        
         }
     }
 }

@@ -7,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
+    padding: 0 2rem;
 
     .card {
         width: 250px;
@@ -74,7 +75,7 @@
                 right: 25px;
                 padding: .5rem 1rem;
                 border: none;
-                background-color: #4cd159;
+                background-color: #28a745;
                 outline: none;
                 color: white;
                 font-weight: 700;
@@ -106,11 +107,8 @@
             color: white;
             height: 100%;
             border-radius: 0 0 17px 17px;
-            transition: background-color .4s ease-in-out;
-
-            &:hover {
-                background-color: #40464fc2;
-            }
+            background-color: #40464fc2;
+            
             h3 {
                 margin-bottom: 10px;
                 font-size: 1.2rem;
@@ -126,6 +124,7 @@
                 .dolar-signal {
                     color: #0f951d;
                     margin-right: 5px;
+                    transition: color .4s ease-in-out;
                 }
             }
         }

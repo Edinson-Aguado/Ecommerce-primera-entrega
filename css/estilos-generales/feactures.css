@@ -9,10 +9,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 50px;
-    gap: 5rem;
-    margin-bottom: 4rem;
-    position: relative;
+    padding: 0 4rem;
+    gap: 4rem;
+    margin-bottom: 3rem;
 
     .feacture {
 
@@ -66,7 +65,7 @@ body {
             border-radius: 10px;
             position: absolute;
             top: 85px;
-            right: -75px;
+            right: -78px;
             text-decoration: none;
             background-color: #147c74;
             color: var(--text-color);
